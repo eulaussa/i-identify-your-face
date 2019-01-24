@@ -1,1 +1,1 @@
-## Face detection API with OpenCV and Python
+## Face detection and identification with OpenCV and Python
