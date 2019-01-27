@@ -40,7 +40,7 @@ cap = cv2.VideoCapture(0)
 while True:
     status, frame = cap.read()
     #Face detection using OpenCV's Haar Cascades
-    faces = face_detector.detectMultiScale(frame, scaleFactor=1.7, minNeighbors=5)
+    faces = face_detector.detectMultiScale(frame, scaleFactor=1.5, minNeighbors=5)
     for (x, y, w, h) in faces:
         roi = frame[y:y+h, x:x+w]
         drawBorder(frame, (x, y), (x+w, y+h), color, stroke, 5, 5)
